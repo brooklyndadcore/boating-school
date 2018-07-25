@@ -17,31 +17,31 @@ should ask for information from other models.
 ### `Student` class
 A `Student` should initialize with a `first_name` and `last_name`
 
-- `Student.all`
+- ****`Student.all`
   - Returns all of the student instances
-- `Student.full_names`
+- ****`Student.full_names`
   - Returns an array of all students' full names
-- `Student#add_boating_test(instructor, test_name, test_status)`
+- ****`Student#add_boating_test(instructor, test_name, test_status)`
   - Should initialize a new `BoatingTest` with a `Student` object, a boating test
   name (`String`), a boating test status (`String`), and an `Instructor` object
-- `Student.find_student(full_name)`
+- **** `Student.find_student(full_name)`
   - Takes in a full name as a string and returns back that `Student` object
 
 ### `BoatingTest` class
 A `BoatingTest` should initialize with a `Student` object, a boating test name
 (`String`), a boating test status (`String`), and an `Instructor` object
 
-- `BoatingTest.all`
+- ****`BoatingTest.all`
   - Returns an array of all boating test instances
 
 ### `Instructor` class
 An `Instructor` should initialize with a `name` as a string.
 
-- `Instructor.all`
+- **** `Instructor.all`
   - Returns an array of all instructor instances
-- `Instructor#fail_student(student_name, test_name)`
+- *****`Instructor#fail_student(student_name, test_name)`
   - Changes a test's status to being `failed`
-- `Instructor#pass_student(student_name, test_name)`
+- **** `Instructor#pass_student(student_name, test_name)`
   - Changes a test's status to being `passed`
-- `Instructor#boating_tests`
+- **** `Instructor#boating_tests`
   - Shows all boating tests that this instructor is conducting
